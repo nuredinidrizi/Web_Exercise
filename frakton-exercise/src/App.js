@@ -11,7 +11,7 @@ function App() {
 				    <Switch>
               <Route exact path="/" render={() => <Redirect to="/albums" />} />
               <Route exact path="/albums" component={Albums} />
-              <Route exact path="/photos" component={Photos} />
+              <Route exact path="/albums/:id" component={Photos} />
             </Switch>
           </BrowserRouter>
     </div>

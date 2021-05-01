@@ -1,9 +1,10 @@
 import React from "react";
 
-const PhotoItem = () => {
+const PhotoItem = ({title, thumbnailUrl, url}) => {
     return (
         <div className="PhotoItem">
-            <p>PhotoItem here</p>
+            <img alt={title} src={thumbnailUrl} />
+            <p>{title}</p>
         </div>
     )
 };

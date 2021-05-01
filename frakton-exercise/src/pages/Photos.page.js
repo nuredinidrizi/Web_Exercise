@@ -22,8 +22,9 @@ const Photos = () => {
     }
     return (
         <div className="Photos">
+            <h2>Photos of album</h2>
             <div className="Photos__group">
-                {photos.map(photo => <PhotoItem key={photo.id} id={photo.id} title={photo.title} thumbnailUrl={photo.thumbnailUrl} /> )}
+                {photos.map(photo => <PhotoItem key={photo.id} id={photo.id} title={photo.title} thumbnailUrl={photo.thumbnailUrl} url={photo.url} /> )}
             </div>
         </div>
     )

@@ -19,6 +19,7 @@ const Albums = () => {
     }
     return (
         <div className="Albums">
+            <h2>Albums</h2>
             <div className="Albums__group">
                 {albums.map(album => <AlbumItem key={album.id} id={album.id} title={album.title} /> )}
             </div>

@@ -2,10 +2,9 @@ import React from "react";
 
 const PhotoItem = ({title, thumbnailUrl, url}) => {
     return (
-        <div className="PhotoItem">
+        <a rel="noreferrer" href={url} target="_blank" className="PhotoItem" title={title}>
             <img alt={title} src={thumbnailUrl} />
-            <p>{title}</p>
-        </div>
+        </a>
     )
 };
 

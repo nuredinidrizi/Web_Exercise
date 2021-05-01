@@ -1,0 +1,15 @@
+.Albums{
+    max-width: 1400px;
+    margin: 30px auto;
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        .AlbumItem{
+            width: 33.33%;
+            margin-bottom: 10px;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+} 

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import AlbumItem from "../components/AlbumItem";
+import "./styles/Album.scss";
 
 const Albums = () => {
     const [albums, setAlbums] = useState([]);
